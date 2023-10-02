@@ -1,12 +1,12 @@
 @import "varibles";
 @import "mixin";
 
+
 .stuff{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: monospace;
 }
 
 body{
@@ -14,4 +14,20 @@ body{
     @include styles($bgColor,$textColor);
     @include flexible(flex,center,center);
     height: 100vh;
+    .stopwatchclock{
+        @include styles($timerColor,$textColor);
+        @include Dimensions(240px,240px);
+        @include flexible(flex,center,center);
+        flex-direction: column;
+        box-shadow: $stopWatchShodow;
+        border-radius: 50%;
+        gap: 15px;
+    }
+    .timer{
+        @include fontSize(40px)
+    }
+    .date-today{
+        @include fontSize(20px);
+        color: $btnColor;
+    }
 }

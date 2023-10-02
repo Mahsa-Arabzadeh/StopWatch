@@ -1,11 +1,19 @@
-@mixin styles($bgColor,$color,$boxShodow){
+@mixin styles($bgColor,$color){
     background-color: $bgColor;
     color: $color;
-    box-shadow: $boxShodow;
 }
 
 @mixin flexible($display, $justifyContent,$alignItems){
     display: $display;
     justify-content: $justifyContent;
     align-items: $alignItems;
+}
+
+@mixin Dimensions($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin fontSize($fontSize){
+    font-size: $fontSize;
 }
