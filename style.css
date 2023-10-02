@@ -18,8 +18,8 @@
 /* General css [end] */
 /* some style to body */
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    /* background: var(--bg-color);
+    color: var(--text-color); */
     height: 100vh;
     display: flex;
     justify-content: center;

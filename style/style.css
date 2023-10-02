@@ -1,0 +1,20 @@
+.stuff, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+body {
+  background-color: #131723;
+  color: #FBFBFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .stopwatchclock {
+  background-color: #1F2633;
+  color: "";
+}/*# sourceMappingURL=style.css.map */
