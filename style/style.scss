@@ -31,3 +31,34 @@ body{
         color: $btnColor;
     }
 }
+
+.watch-btn{
+    @include flexible(flex,space-evenly,center);
+    @include fontSize(30px);
+    margin-top: 50px;
+    .start-btn{
+        @include styles($btnColor,$bgColor);
+        @include Dimensions(60px,60px);
+        @include flexible(flex,center,center);
+        box-shadow: $shodowBtnGreen;
+        border-radius: 50%;
+        cursor: pointer;
+        &:active{
+            background-color: $btnHoverColor;
+            box-shadow: $shodowHoverBtnGreen;
+        }
+    }
+    .reset-btn{
+        @include styles($timerColor,$textColor);
+        @include Dimensions(60px,60px);
+        @include flexible(flex,center,center);
+        @include fontSize(18px);
+        box-shadow: $shodowBtnGrey;
+        border-radius: 50%;
+        cursor: pointer;
+        &:active{
+            background-color: $timerHoverC;
+            box-shadow: $shodowHoverBtnGrey;
+        }
+    }
+}

@@ -32,4 +32,45 @@ body .timer {
 body .date-today {
   font-size: 20px;
   color: #5FEAD1;
+}
+
+.watch-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.watch-btn .start-btn {
+  background-color: #5FEAD1;
+  color: #131723;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 1px rgba(95, 234, 209, 0.4745098039);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.watch-btn .start-btn:active {
+  background-color: #2bb59c;
+  box-shadow: 0px 0px 8px 1px rgba(27, 97, 84, 0.1882352941);
+}
+.watch-btn .reset-btn {
+  background-color: #1F2633;
+  color: #FBFBFB;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0px 0px 8px 1px rgba(74, 77, 85, 0.7019607843);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.watch-btn .reset-btn:active {
+  background-color: rgba(33, 42, 60, 0.7647058824);
+  box-shadow: 0px 0px 8px 1px rgba(31, 33, 41, 0.5647058824);
 }/*# sourceMappingURL=style.css.map */
