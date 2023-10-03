@@ -43,10 +43,6 @@ function todayDate() {
   dateOfToday.innerHTML = hou + ":" + min + ":" + sec;
 }
 
-startBtn.addEventListener("click", function () {
-  interval = setInterval(timer, 1000);
-});
-
 resetBtn.addEventListener("click", function () {
   seconds = 0;
   minutes = 0;
@@ -54,4 +50,16 @@ resetBtn.addEventListener("click", function () {
   second.innerHTML = "0" + seconds;
   minute.innerHTML = "0" + minutes;
   hour.innerHTML = "0" + hours;
+});
+
+startBtn.addEventListener("click", function () {
+  if ((arrowRight.style.display = "block")) {
+    pause.classList.remove("pause");
+    arrowRight.style.display = "none";
+    interval = setInterval(timer, 1000);
+  } else if ((arrowRight.style.display = "none")) {
+    pause.style.display = "none";
+    pause.style.opacity = "1";
+    arrowRight.style.display = "block";
+  }
 });
