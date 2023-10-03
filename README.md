@@ -1,7 +1,7 @@
 # Title: Stopwatch Essentials
 
 ## Introduction:
-** A stopwatch is a timekeeping tool with applications in sports, fitness, science, and industry. It has evolved from mechanical to digital forms, becoming integral in various domains. **
+> A stopwatch is a timekeeping tool with applications in sports, fitness, science, and industry. It has evolved from mechanical to digital forms, becoming integral in various domains.
 
 ## Components and Types:
 
