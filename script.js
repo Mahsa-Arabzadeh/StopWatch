@@ -47,6 +47,9 @@ resetBtn.addEventListener("click", function () {
   seconds = 0;
   minutes = 0;
   hours = 0;
+  clearInterval(interval);
+  arrowRight.style.display = "block";
+  pause.classList.add("pause");
   second.innerHTML = "0" + seconds;
   minute.innerHTML = "0" + minutes;
   hour.innerHTML = "0" + hours;

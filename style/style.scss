@@ -17,12 +17,13 @@ body{
     height: 100vh;
     .stopwatchclock{
         @include styles($timerColor,$textColor);
-        @include Dimensions(240px,240px);
+        @include Dimensions(250px,250px);
         @include flexible(flex,center,center);
         flex-direction: column;
         box-shadow: $stopWatchShodow;
         border-radius: 50%;
         gap: 15px;
+        animation: shodow 2s infinite;
     }
     .timer{
         @include fontSize(40px)
@@ -62,11 +63,6 @@ body{
             box-shadow: $shodowHoverBtnGrey;
         }
     }
-}
-
-.show-btn{
-    display: block;
-    opacity: 1;
 }
 
 .pause{
