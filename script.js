@@ -53,13 +53,15 @@ resetBtn.addEventListener("click", function () {
 });
 
 startBtn.addEventListener("click", function () {
-  if ((arrowRight.style.display = "block")) {
+  const arrowRightStyle = window.getComputedStyle(arrowRight);
+  if (arrowRightStyle.display === "block") {
     pause.classList.remove("pause");
     arrowRight.style.display = "none";
+    clearInterval(interval);
     interval = setInterval(timer, 1000);
-  } else if ((arrowRight.style.display = "none")) {
-    pause.style.display = "none";
-    pause.style.opacity = "1";
+  } else if (arrowRightStyle.display === "none") {
+    pause.classList.add("pause");
     arrowRight.style.display = "block";
+    clearInterval(interval);
   }
 });
