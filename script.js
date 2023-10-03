@@ -2,11 +2,16 @@ const second = document.querySelector(".second");
 const minute = document.querySelector(".minute");
 const hour = document.querySelector(".hour");
 const dateOfToday = document.querySelector(".date-today");
+const arrowRight = document.querySelector(".arrow-right");
+const pause = document.querySelector(".pause");
+const startBtn = document.querySelector(".start-btn");
+const resetBtn = document.querySelector(".reset-btn");
 
 let hours = 0,
   minutes = 0,
   seconds = 0;
-setInterval(timer, 1000);
+let interval;
+
 function timer() {
   seconds++;
   if (seconds >= 60) {
@@ -37,3 +42,16 @@ function todayDate() {
 
   dateOfToday.innerHTML = hou + ":" + min + ":" + sec;
 }
+
+startBtn.addEventListener("click", function () {
+  interval = setInterval(timer, 1000);
+});
+
+resetBtn.addEventListener("click", function () {
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
+  second.innerHTML = "0" + seconds;
+  minute.innerHTML = "0" + minutes;
+  hour.innerHTML = "0" + hours;
+});

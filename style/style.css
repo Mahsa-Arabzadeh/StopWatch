@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
@@ -38,7 +39,7 @@ body .date-today {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 50px;
 }
 .watch-btn .start-btn {
@@ -73,4 +74,14 @@ body .date-today {
 .watch-btn .reset-btn:active {
   background-color: rgba(33, 42, 60, 0.7647058824);
   box-shadow: 0px 0px 8px 1px rgba(31, 33, 41, 0.5647058824);
+}
+
+.show-btn {
+  display: block;
+  opacity: 1;
+}
+
+.pause {
+  opacity: 0;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

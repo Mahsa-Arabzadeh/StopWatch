@@ -7,6 +7,7 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body{
@@ -34,7 +35,7 @@ body{
 
 .watch-btn{
     @include flexible(flex,space-evenly,center);
-    @include fontSize(30px);
+    @include fontSize(40px);
     margin-top: 50px;
     .start-btn{
         @include styles($btnColor,$bgColor);
@@ -61,4 +62,14 @@ body{
             box-shadow: $shodowHoverBtnGrey;
         }
     }
+}
+
+.show-btn{
+    display: block;
+    opacity: 1;
+}
+
+.pause{
+    opacity: 0;
+    display: none;
 }
