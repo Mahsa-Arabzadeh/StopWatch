@@ -23,7 +23,6 @@ body{
         box-shadow: $stopWatchShodow;
         border-radius: 50%;
         gap: 15px;
-        animation: shodow 2s infinite;
     }
     .timer{
         @include fontSize(40px)
@@ -68,4 +67,17 @@ body{
 .pause{
     opacity: 0;
     display: none;
+}
+
+
+.headline{ 
+   @keyframes fade{
+    0%,100%{
+        box-shadow: inset 0px 0px 12px 0px rgba(255, 0, 0, 0.363);
+    }
+    50%{
+        box-shadow: inset 0px 0px 30px 1px rgba(255, 0, 0, 0.731);
+    }
+    }
+  @include animation(fade, 2s, infinite);
 }

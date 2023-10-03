@@ -6,6 +6,7 @@ const arrowRight = document.querySelector(".arrow-right");
 const pause = document.querySelector(".pause");
 const startBtn = document.querySelector(".start-btn");
 const resetBtn = document.querySelector(".reset-btn");
+const stopWatchClock = document.querySelector(".stopwatchclock");
 
 let hours = 0,
   minutes = 0,
@@ -50,6 +51,7 @@ resetBtn.addEventListener("click", function () {
   clearInterval(interval);
   arrowRight.style.display = "block";
   pause.classList.add("pause");
+  stopWatchClock.classList.remove("headline");
   second.innerHTML = "0" + seconds;
   minute.innerHTML = "0" + minutes;
   hour.innerHTML = "0" + hours;
@@ -62,6 +64,7 @@ startBtn.addEventListener("click", function () {
     arrowRight.style.display = "none";
     clearInterval(interval);
     interval = setInterval(timer, 1000);
+    stopWatchClock.classList.add("headline");
   } else if (arrowRightStyle.display === "none") {
     pause.classList.add("pause");
     arrowRight.style.display = "block";

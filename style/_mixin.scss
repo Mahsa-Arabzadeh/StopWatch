@@ -17,3 +17,9 @@
 @mixin fontSize($fontSize){
     font-size: $fontSize;
 }
+
+@mixin animation($name,$duration,$iterationCount){
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iterationCount;
+}

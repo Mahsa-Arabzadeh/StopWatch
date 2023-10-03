@@ -26,7 +26,6 @@ body .stopwatchclock {
   box-shadow: inset 0px 0px 10px 5px rgba(74, 77, 85, 0.768627451);
   border-radius: 50%;
   gap: 15px;
-  animation: shodow 2s infinite;
 }
 body .timer {
   font-size: 40px;
@@ -80,4 +79,18 @@ body .date-today {
 .pause {
   opacity: 0;
   display: none;
+}
+
+.headline {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes fade {
+  0%, 100% {
+    box-shadow: inset 0px 0px 12px 0px rgba(255, 0, 0, 0.363);
+  }
+  50% {
+    box-shadow: inset 0px 0px 30px 1px rgba(255, 0, 0, 0.731);
+  }
 }/*# sourceMappingURL=style.css.map */
