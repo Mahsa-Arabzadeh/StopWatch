@@ -1,4 +1,5 @@
-.stuff, body {
+.stuff,
+body {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -14,11 +15,13 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 body .stopwatchclock {
   background-color: #1F2633;
   color: #FBFBFB;
   width: 250px;
   height: 250px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,9 +30,11 @@ body .stopwatchclock {
   border-radius: 50%;
   gap: 15px;
 }
+
 body .timer {
   font-size: 40px;
 }
+
 body .date-today {
   font-size: 20px;
   color: #5FEAD1;
@@ -42,6 +47,7 @@ body .date-today {
   font-size: 40px;
   margin-top: 50px;
 }
+
 .watch-btn .start-btn {
   background-color: #5FEAD1;
   color: #131723;
@@ -54,10 +60,12 @@ body .date-today {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .watch-btn .start-btn:active {
   background-color: #2bb59c;
   box-shadow: 0px 0px 8px 1px rgba(27, 97, 84, 0.1882352941);
 }
+
 .watch-btn .reset-btn {
   background-color: #1F2633;
   color: #FBFBFB;
@@ -71,6 +79,7 @@ body .date-today {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .watch-btn .reset-btn:active {
   background-color: rgba(33, 42, 60, 0.7647058824);
   box-shadow: 0px 0px 8px 1px rgba(31, 33, 41, 0.5647058824);
@@ -86,11 +95,17 @@ body .date-today {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
 @keyframes fade {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: inset 0px 0px 12px 0px rgba(255, 0, 0, 0.363);
   }
+
   50% {
     box-shadow: inset 0px 0px 30px 1px rgba(255, 0, 0, 0.731);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
