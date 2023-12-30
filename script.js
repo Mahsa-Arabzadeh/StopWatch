@@ -86,3 +86,5 @@ startBtn.addEventListener("click", function () {
     clearInterval(interval);
   }
 });
+
+console.log("sdf");
